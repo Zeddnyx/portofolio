@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-mainBg text-gray1;
+  }
+  nav {
+    @apply px-10 md:px-10 lg:px-16 flex justify-between items-center h-16 w-full bg-mainBg z-50 sticky top-0 backdrop-filter backdrop-blur-sm bg-opacity-80;
+  }
+  footer {
+    @apply w-full text-center relative bottom-0 p-2 mt-20 z-50;
+  }
+  button {
+    @apply outline-none
+  }
+  section {
+    @apply px-10 md:px-24 lg:px-36 xl:px-40 text-gray2 my-20
+  }
+  h1 {
+    @apply font-semibold text-5xl md:text-6xl xl:text-7xl text-gray1;
+  }
+  h2 {
+    @apply font-bold text-gray1 text-2xl md:text-3xl lg:text-4xl mb-8;
+  }
+  h3 {
+    @apply font-semibold text-cyan;
+  }
+  h4 {
+    @apply font-semibold text-sm mb-2 font-mono;
+  }
+  p {
+    @apply text-[16px] lg:text-[18px];
+  }
+}
+
+/*Global Style*/
+.btn {
+  @apply py-1 px-3 text-cyan text-center border rounded text-sm border-cyan hover:bg-mainBg3 transition-all duration-500;
+}
+
+/* Navbar Section */
+.menu {
+  @apply md:hidden transition-all duration-700 ease-in-out cursor-pointer outline-none z-40 text-cyan font-semibold;
+}
+.navMobile {
+  @apply md:hidden flex gap-16 flex-col justify-center transition-all duration-500 ease-in absolute h-screen w-[100%] top-0 py-28 px-10 bg-mainBg2 text-end;
+}
+.navMobileOff {
+  @apply left-[-100%] opacity-0 ease-in;
+}
+.navDesktop {
+  @apply hidden md:flex gap-7;
+}
+.li-nav {
+  @apply hover:text-cyan h-7 transition-all duration-100 ease-in cursor-pointer tracking-widest;
+}
+
+/*HomePage Section */
+
+/*About Section*/
+.parent-about {
+  @apply flex flex-col md:flex-row w-full justify-between gap-4 md:gap-10
+}
+.about-desc-parent {
+  @apply flex flex-col gap-3 flex-1;
+}
+.about-img-parent {
+  @apply w-72 h-[305px] relative z-30 rounded border-2 border-cyan mx-auto mt-5 md:mt-0;
+}
+.about-img-div {
+  @apply w-full h-full bg-cyan z-20 relative opacity-60 hover:opacity-0 transition-all duration-500 top-4 right-5 hover:top-3 hover:right-3 rounded;
+}
+.about-img-img {
+  @apply w-[350px] rounded h-[300px] absolute top-4 right-5;
+}
+
+/* Experience Section */
+.parent-experience {
+  @apply flex gap-5;
+}
+.experience-list {
+  @apply flex md:flex-col mb-5 md:mb-0 border-gray2 border-b md:border-b-0 md:border-l justify-between md:h-52 text-start overflow-x-auto appearance-none gap-3 col-span-1
+}
+.experience-title {
+  @apply hover:text-cyan hover:border-b-2 border-cyan md:hover:border-b-0 md:hover:border-l-2 md:px-5 py-3 md:py-0 px-10 transition-all duration-300 h-10 md:h-full md:w-full md:flex md:items-center text-center cursor-pointer hover:bg-mainBg3
+}
+.experience-title-isi {
+  @apply md:mt-3 grid gap-3
+}
+
+/* Work section*/
+.parent-work {
+  @apply w-full relative grid gap-14 md:gap-20;
+}
+.parent-project-card {
+  @apply relative grid md:grid-cols-2  xl:place-items-start
+}
+.parent-project {
+  @apply opacity-80 md:opacity-100 w-full bg-mainBg2 shadow-lg grid gap-5 md:bg-transparent md:shadow-none z-20 p-5 md:p-0;
+}
+.parent-img {
+  @apply  md:hover:opacity-100 w-full transition-all duration-300 z-10 absolute top-0 md:top-2 bottom-0 md:relative md:opacity-100;
+}
+.child-parent-img-1 {
+  @apply h-full w-full overflow-hidden md:w-[500px] lg:w-full object-cover object-center
+}
+.child-parent-img-2 {
+  @apply absolute top-0 bottom-0 h-full w-full opacity-[65%] md:hover:opacity-0 transition-all duration-300 bg-mainBg md:bg-cyan md:z-40
+}
+
+/* Footer Section */
+.social-desktop {
+  @apply fixed hidden md:grid items-center gap-2 fixed bottom-0 left-8 lg:left-14 xl:left-16;
+}
+.social-desktop-email {
+  @apply fixed hidden md:flex items-center gap-2 tracking-[4px] fixed bottom-0 right-8 lg:right-14 lg:right-16;
+}
