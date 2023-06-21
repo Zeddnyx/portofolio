@@ -18,7 +18,7 @@ export default function About() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
       viewport={{ once: false, amount: 0.5 }}
-      className="mb-20 py-36"
+      className="mb-20 py-36 xl:mx-40"
       id="about"
     >
       <h2 className={mont.className} >
@@ -32,9 +32,8 @@ export default function About() {
           <p className="break-normal">
             Hi, My name is <span className="text-cyan">Jaenudin</span> but i
             would like if you call me <span className="text-cyan">Zedd</span>,
-            i'm a frontend developer who loves to create beautiful and
-            functional websites. In my spare time, I enjoy customizing my Linux
-            desktop and configuring Neovim to streamline my workflow. I am
+            i'm a self-tough frontend developer who loves to create beautiful and
+            functional websites. In my spare time, configuring Neovim to streamline my workflow. I am
             passionate about learning new technologies and staying up-to-date
             with the latest trends in web development.
           </p>

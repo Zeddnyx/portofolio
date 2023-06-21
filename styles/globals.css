@@ -61,7 +61,7 @@
 
 /*About Section*/
 .parent-about {
-  @apply flex flex-col md:flex-row w-full justify-between gap-4 md:gap-10
+  @apply grid grid-cols-1 md:grid-cols-2 w-full justify-between gap-4 md:gap-10
 }
 .about-desc-parent {
   @apply flex flex-col gap-3 flex-1;

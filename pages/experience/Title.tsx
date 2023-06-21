@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { experience } from "@/utils/data";
 import { mono } from "@/utils/fonts";
 
-export default function Title({ currentExp, onClickTitle }){
+export default function Title({ onClickTitle }: any) {
   return (
     <div className="experience-list">
       {experience.map((item, id) => {

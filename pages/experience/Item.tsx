@@ -1,7 +1,7 @@
 import { experience } from "@/utils/data";
 import { mono, mont } from "@/utils/fonts";
 
-export default function ExperienceItem({ currentExp }){
+export default function ExperienceItem({ currentExp }: any){
   return (
     <div className={`${mont.className} experience-title-isi`}>
       <div>

@@ -1,7 +1,6 @@
 import { NextFont } from 'next/dist/compiled/@next/font'
 import { Poppins, Montserrat, DM_Mono } from 'next/font/google'
 
-
 export const pop: NextFont = Poppins({
   subsets: ["latin"],
   weight: ["400","500","600","700"]

@@ -3,14 +3,14 @@ import ExperienceItem from "./Item";
 import { mono, mont } from "@/utils/fonts";
 import { motion as m } from "framer-motion";
 
-export default function Experience({ currentExp, onClickTitle }) {
+export default function Experience({ currentExp, onClickTitle }: any) {
   return (
     <m.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: false, amount: 0.5 }}
-      className="sm:mx-10 py-40 lg:mx-10 xl:mx-20 mt-40"
+      className="sm:mx-10 py-40 lg:mx-10 xl:mx-40 mt-40"
       id="experience"
     >
       <h2 className={mont.className}>
@@ -22,7 +22,7 @@ export default function Experience({ currentExp, onClickTitle }) {
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-3">
         <div>
-          <Title currentExp={currentExp} onClickTitle={onClickTitle} />
+          <Title onClickTitle={onClickTitle} />
         </div>
         <div className="col-span-4">
           <ExperienceItem currentExp={currentExp} />
