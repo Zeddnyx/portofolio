@@ -6,8 +6,12 @@ export const metadata = {
   title: "Portofolio Zedd",
   description: "A portofolio using NextJS",
 };
-j
-export default function RootLayout({ children }: any) {
+
+interface Child {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: Child) {
   return (
     <html lang="en">
       <body>
