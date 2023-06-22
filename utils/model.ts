@@ -9,6 +9,7 @@ export interface Social {
   icon: IconType | string;
   link: string;
   title: string;
+  email?: string;
 }
 
 export interface Project<T> {

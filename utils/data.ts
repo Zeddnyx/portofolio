@@ -1,6 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { TbBrandTelegram } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
 import Nvim from "../public/nvim.jpg";
 import Time from "../public/time.jpg";
 import Movie from "../public/movie.jpg";
@@ -42,7 +43,8 @@ export const social: Social[] = [
     title: "Linkedin",
   },
   {
-    icon: "Zeddnyx08@gmail.com",
+    icon: AiOutlineMail,
+    email: "Zeddnyx08@gmail.com",
     link: "mailto:zeddnyx08@gmail.com",
     title: "Email",
   },

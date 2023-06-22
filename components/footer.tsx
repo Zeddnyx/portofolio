@@ -49,7 +49,7 @@ export default function footer() {
           className={`${mono.className} text-gray1 hover:text-cyan`}
           href={social[3].link}
         >
-          {social[3].icon}
+          {social[3].email}
         </a>
         <div className="h-16 w-px bg-gray1"></div>
       </m.div>
