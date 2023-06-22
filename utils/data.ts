@@ -50,7 +50,7 @@ export const social: Social[] = [
   },
 ];
 
-export const project: Project<string | StaticImageData>[] = [
+export const project: Project<string>[] = [
   {
     title: "Neovim Configuration",
     desc: "I have  optimized for fast startup times. I have added snippets similliar to those found in VSCode. this setup is perfect for frontend development and has streamlined my workflow by providing a comportable and efficient environment for coding",

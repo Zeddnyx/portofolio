@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
 export interface List {
@@ -19,7 +20,7 @@ export interface Project<T> {
   tech: T;
   link: T;
   live?: T;
-  image?: T;
+  image?: StaticImageData;
 }
 
 export interface Experience {
