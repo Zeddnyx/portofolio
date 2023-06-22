@@ -6,8 +6,8 @@ export const metadata = {
   title: "Portofolio Zedd",
   description: "A portofolio using NextJS",
 };
-
-export default function RootLayout({ children }) {
+j
+export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       <body>
