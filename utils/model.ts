@@ -13,14 +13,14 @@ export interface Social {
   email?: string;
 }
 
-export interface Project<T> {
+export interface Project {
   id?: number;
-  title: T;
-  desc: T;
-  tech: T;
-  link: T;
-  live?: T;
-  image?: StaticImageData;
+  title:  string;
+  desc: string;
+  tech: string;
+  link: string;
+  live?: string;
+  image?: any;
 }
 
 export interface Experience {

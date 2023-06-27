@@ -6,7 +6,6 @@ import Nvim from "../public/nvim.jpg";
 import Time from "../public/time.jpg";
 import Movie from "../public/movie.jpg";
 import { Experience, List, Project, Social } from "./model";
-import { StaticImageData } from "next/image";
 
 export const list: List[] = [
   {
@@ -50,7 +49,7 @@ export const social: Social[] = [
   },
 ];
 
-export const project: Project<string>[] = [
+export const project: Project[] = [
   {
     title: "Neovim Configuration",
     desc: "I have  optimized for fast startup times. I have added snippets similliar to those found in VSCode. this setup is perfect for frontend development and has streamlined my workflow by providing a comportable and efficient environment for coding",
@@ -76,7 +75,7 @@ export const project: Project<string>[] = [
   },
 ];
 
-export const otherProject: Project<string>[] = [
+export const otherProject: Project[] = [
   {
     id: 0,
     title: "Ztools",

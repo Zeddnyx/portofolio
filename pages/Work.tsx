@@ -24,7 +24,7 @@ export default function page() {
       <div className="parent-work">
         {project.map((item, id) => {
           return (
-            <div key={item.title} className="parent-project-card">
+            <div key={id} className="parent-project-card">
               <div className="parent-project">
                 <a href={item.live ? item.live : item.link}>
                   <h3 className="text-xl md:text-2xl text-gray1 hover:text-cyan cursor-pointer">

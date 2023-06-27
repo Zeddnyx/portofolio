@@ -17,7 +17,7 @@ export default function Navbar() {
         initial={{ x: -200 }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
-        className={`${mont.className} z-40 text-xl md:text-2xl cursor-pointer`}
+        className={`${mont.className} text-xl md:text-2xl cursor-pointer`}
       >
         <a href="#home">Zedd.</a>
       </m.h3>
