@@ -1,6 +1,6 @@
 import { experience } from "@/utils/data";
 import { mono } from "@/utils/fonts";
-import Props from "./modules"
+import { Props } from "./modules";
 
 export default function Title({ onClickTitle }: Props) {
   return (
