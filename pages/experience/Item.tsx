@@ -1,7 +1,8 @@
 import { experience } from "@/utils/data";
 import { mono, mont } from "@/utils/fonts";
+import { Props } from "./modules"
 
-export default function ExperienceItem({ currentExp }: any){
+export default function ExperienceItem({ currentExp = 0 }: Props) {
   return (
     <div className={`${mont.className} experience-title-isi`}>
       <div>

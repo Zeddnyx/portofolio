@@ -18,7 +18,7 @@ export default function About() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
       viewport={{ once: false, amount: 0.5 }}
-      className="mb-20 py-36 xl:mx-40"
+      className="mb-20 py-36 xl3:mx-40"
       id="about"
     >
       <h2 className={mont.className} >

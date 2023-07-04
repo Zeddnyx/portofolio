@@ -2,8 +2,9 @@ import Title from "./Title";
 import ExperienceItem from "./Item";
 import { mono, mont } from "@/utils/fonts";
 import { motion as m } from "framer-motion";
+import { Props } from "./modules"
 
-export default function Experience({ currentExp, onClickTitle }: any) {
+export default function Experience({ currentExp, onClickTitle }: Props) {
   return (
     <m.section
       initial={{ opacity: 0 }}
