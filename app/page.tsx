@@ -19,7 +19,7 @@ export default function Home() {
       <Suspense fallback={<Loading />} >
         <HomePage />
         <About />
-        <Experience currentExp={currentExp} onClickTitle={onClickTitle} />
+        {/* <Experience currentExp={currentExp} onClickTitle={onClickTitle} /> */}
         <Work />
         <Contact />
       </Suspense>
