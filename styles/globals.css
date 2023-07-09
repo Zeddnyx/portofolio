@@ -40,7 +40,7 @@
   @apply py-1 px-3 text-cyan text-center border rounded text-sm border-cyan hover:bg-mainBg3 transition-all duration-500;
 }
 .ul-tech-tag {
-  @apply text-[14px] md:text-[15px] flex gap-2 items-center
+  @apply text-[14px] md:text-[15px] flex gap-2 items-center flex-wrap
 }
 .rounded-bg-cyan1 {
   @apply bg-mainBg3 px-4 p-1 rounded-full text-cyan
@@ -104,22 +104,22 @@
 
 /* Work section*/
 .parent-work {
-  @apply w-full relative grid gap-14 md:gap-20;
+  @apply w-full relative grid gap-14 md:gap-20
 }
 .parent-project-card {
-  @apply relative grid md:grid-cols-2  xl:place-items-start
+  @apply relative grid md:grid-cols-2  xl:place-items-start w-full
 }
 .parent-project {
-  @apply opacity-80 md:opacity-100 w-full bg-mainBg2 shadow-lg grid gap-5 md:bg-transparent md:shadow-none z-20 p-5 md:p-0;
+  @apply opacity-80 md:opacity-100 w-full bg-mainBg2 grid gap-5 md:bg-transparent  z-20 p-5 md:p-0 md:pr-5;
 }
 .project-title {
   @apply text-xl md:text-2xl text-gray1 hover:text-cyan cursor-pointer 
 }
-.project.desc {
+.project-desc {
   @apply bg-mainBg2 md:shadow-lg md:p-5 md:w-[500px] lg:w-[550px] 
 }
 .parent-img {
-  @apply  md:hover:opacity-100 w-full transition-all duration-300 z-10 absolute top-0 md:top-2 bottom-0 md:relative md:opacity-100;
+  @apply  md:hover:opacity-100 w-full transition-all duration-300 z-10 absolute top-0 md:top-2 bottom-0 md:relative md:opacity-100
 }
 .child-parent-img-1 {
   @apply h-full w-full overflow-hidden md:w-[500px] lg:w-full object-cover object-center

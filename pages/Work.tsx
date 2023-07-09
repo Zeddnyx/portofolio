@@ -32,7 +32,7 @@ export default function page() {
                   </h3>
                 </a>
 
-                <div className="parent-project">
+                <div className="project-desc">
                   <p className="leading-6">{item.desc}</p>
                 </div>
 
