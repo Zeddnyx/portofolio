@@ -17,7 +17,7 @@ export interface Project {
   id?: number;
   title:  string;
   desc: string;
-  tech: string;
+  tech: string[];
   link: string;
   live?: string;
   image?: any;
