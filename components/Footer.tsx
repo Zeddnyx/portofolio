@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={mono.className}>
       {/* Social Mobile */}
-      <div className="md:hidden py-5 flex gap-7 items-center justify-center text-center">
+      <div className="social-mobile">
         {social.slice(0, 3).map((item, id) => (
           <a key={id} href={item.link} className={`${mono.className} `}>
             <item.icon size="25" />
@@ -27,7 +27,7 @@ export default function Footer() {
               <a href={item.link} className={`${mono.className} li-nav`}>
                 <item.icon size="25" />
               </a>
-              <span className="hidden absolute bg-mainBg2 rounded left-10 p-2 text-xs  group-hover:flex">
+              <span className="tooltip">
                 {/* Tooltip */}
                 {item.title}
               </span>

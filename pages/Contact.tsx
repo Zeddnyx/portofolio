@@ -9,7 +9,7 @@ export default function page() {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: false, amount: 0.5 }}
-      className="text-center flex flex-col justify-center items-center gap-3 my-60"
+      className="contact"
       id="contact"
     >
       <div>

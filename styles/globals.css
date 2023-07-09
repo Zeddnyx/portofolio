@@ -128,10 +128,21 @@
   @apply absolute top-0 bottom-0 h-full w-full opacity-[65%] md:hover:opacity-0 transition-all duration-300 bg-mainBg md:bg-cyan md:z-40
 }
 
+/* Contact section */
+.contact {
+@apply text-center flex flex-col justify-center items-center gap-3 my-60
+}
+
 /* Footer Section */
 .social-desktop {
   @apply fixed hidden md:grid items-center gap-2 fixed bottom-0 left-8 lg:left-14 xl:left-16;
 }
+.social-mobile {
+  @apply md:hidden py-5 flex gap-7 items-center justify-center text-center
+}
 .social-desktop-email {
   @apply fixed hidden md:flex items-center gap-2 tracking-[4px] fixed bottom-0 right-8 lg:right-14 lg:right-16;
+}
+.tooltip {
+  @apply hidden absolute bg-mainBg2 rounded left-10 p-2 text-xs  group-hover:flex
 }
