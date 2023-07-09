@@ -3,7 +3,7 @@ import { mono } from "@/utils/fonts";
 import { social } from "@/utils/data";
 import { motion as m } from "framer-motion";
 
-export default function footer() {
+export default function Footer() {
   return (
     <footer className={mono.className}>
       {/* Social Mobile */}
