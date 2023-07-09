@@ -1,28 +1,16 @@
-"use client";
-import { useState, lazy, Suspense } from "react";
-const HomePage = lazy(() => import("@/pages/HomePage"));
-const About = lazy(() => import("@/pages/About"));
-const Work = lazy(() => import("@/pages/Work"));
-const Contact = lazy(() => import("@/pages/Contact"));
-const Experience = lazy(() => import("@/pages/experience/Experience"));
-import Loading from "@/app/loading";
+"use client"
+import HomePage from "@/pages/HomePage"
+import About  from "@/pages/About"
+import Work  from "@/pages/Work"
+import Contact  from "@/pages/Contact"
 
-export default function Home() {
-  const [currentExp, setCurrentExp] = useState<number>(0);
-
-  const onClickTitle = (clickedTitle: number) => {
-    setCurrentExp(clickedTitle);
-  };
-
+export default function page() {
   return (
     <main>
-      <Suspense fallback={<Loading />} >
-        <HomePage />
-        <About />
-        {/* <Experience currentExp={currentExp} onClickTitle={onClickTitle} /> */}
-        <Work />
-        <Contact />
-      </Suspense>
+      <HomePage />
+      <About />
+      <Work />
+      <Contact />
     </main>
   );
 }

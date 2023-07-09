@@ -30,10 +30,10 @@ export default function Navbar() {
         className={`${mono.className} navDesktop text-base`}
       >
         {list.map((item, id) => (
-          <li key={item.title} className="li-nav">
+          <li key={item.link} className="li-nav">
             <a href={`#${item.link}`}>
               <span className="text-cyan text-xs">0{id + 1}. </span>
-              {item.title}
+              {item.link}
             </a>
           </li>
         ))}
@@ -64,9 +64,9 @@ export default function Navbar() {
           } navMobile`}
       >
         {list.map((item, id) => (
-          <li key={item.title} className="li-nav text-lg">
+          <li key={item.link} className="li-nav text-lg ">
             <span className="text-cyan text-xs">0{id + 1}. </span>
-            <a href={`#${item.link}`}>{item.title}</a>
+            <a href={`#${item.link}`}>{item.link}</a>
           </li>
         ))}
         <li>

@@ -27,18 +27,20 @@ export default function page() {
             <div key={id} className="parent-project-card">
               <div className="parent-project">
                 <a href={item.live ? item.live : item.link}>
-                  <h3 className="text-xl md:text-2xl text-gray1 hover:text-cyan cursor-pointer">
+                  <h3 className="project-title">
                     {item.title}
                   </h3>
                 </a>
 
-                <div className="bg-mainBg2 md:shadow-lg md:p-5 md:w-[500px] lg:w-[550px]">
+                <div className="parent-project">
                   <p className="leading-6">{item.desc}</p>
                 </div>
 
-                <p className={`${mono.className} text-[14px] text-gray2`}>
-                  {item.tech}
-                </p>
+                <ul className={`${mono.className} ul-tech-tag`}>
+                  {item.tech.map((item, id) => (
+                    <li className="rounded-bg-cyan2" key={id}>{item}</li>
+                  ))}
+                </ul>
 
                 <div className="flex gap-4 items-center">
                   <a className="hover:text-cyan" href={item.link}>
@@ -86,7 +88,6 @@ export default function page() {
                   <a className="hover:text-cyan" href={item.link}>
                     <FiGithub size="20" />
                   </a>
-                  {/* !! means item.lenght != 0*/}
                   <span className="hover:text-cyan">
                     {!!item.live ? (
                       <a href={item.live}>
@@ -105,9 +106,11 @@ export default function page() {
                 </h3>
               </a>
               <p>{item.desc}</p>
-              <p className={`${mono.className} text-[14px] md:text-[15px]`}>
-                {item.tech}
-              </p>
+              <ul  className={`${mono.className} ul-tech-tag`}>
+                {item.tech.map((item, id) => (
+                  <li className="rounded-bg-cyan1" key={id}>{item}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

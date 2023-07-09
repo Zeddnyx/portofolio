@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 export default function HomePage() {
 
   return (
-    <section id="home" className={`{mont.className} py-40 my-36 mb-96 md:mb-80`}>
+    <section id="home" className={`${mont.className} py-40 my-36 mb-96 md:mb-80`}>
       <m.div
         initial={{ y: -500, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

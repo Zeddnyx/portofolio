@@ -39,6 +39,15 @@
 .btn {
   @apply py-1 px-3 text-cyan text-center border rounded text-sm border-cyan hover:bg-mainBg3 transition-all duration-500;
 }
+.ul-tech-tag {
+  @apply text-[14px] md:text-[15px] flex gap-2 items-center
+}
+.rounded-bg-cyan1 {
+  @apply bg-mainBg3 px-4 p-1 rounded-full text-cyan
+}
+.rounded-bg-cyan2 {
+  @apply bg-mainBg2 px-4 p-1 rounded-full text-cyan
+}
 
 /* Navbar Section */
 .menu {
@@ -54,7 +63,7 @@
   @apply hidden md:flex gap-7;
 }
 .li-nav {
-  @apply hover:text-cyan h-7 transition-all duration-100 ease-in cursor-pointer tracking-widest;
+  @apply hover:text-cyan h-7 transition-all duration-100 ease-in cursor-pointer tracking-widest capitalize
 }
 
 /*HomePage Section */
@@ -74,6 +83,9 @@
 }
 .about-img-img {
   @apply w-[350px] rounded h-[300px] absolute top-4 right-5;
+}
+.ul-tech {
+  @apply w-full lg:w-96 grid grid-cols-2 list-inside list-disc leading-5
 }
 
 /* Experience Section */
@@ -99,6 +111,12 @@
 }
 .parent-project {
   @apply opacity-80 md:opacity-100 w-full bg-mainBg2 shadow-lg grid gap-5 md:bg-transparent md:shadow-none z-20 p-5 md:p-0;
+}
+.project-title {
+  @apply text-xl md:text-2xl text-gray1 hover:text-cyan cursor-pointer 
+}
+.project.desc {
+  @apply bg-mainBg2 md:shadow-lg md:p-5 md:w-[500px] lg:w-[550px] 
 }
 .parent-img {
   @apply  md:hover:opacity-100 w-full transition-all duration-300 z-10 absolute top-0 md:top-2 bottom-0 md:relative md:opacity-100;

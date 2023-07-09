@@ -18,7 +18,7 @@ export default function page() {
         </span>
         <h2 className={mont.className}>Get In Touch</h2>
       </div>
-      <p className={`${mont.className} md:px-10 lg:px-36`}>
+      <p className={`${mont.className} max-w-[600px]`}>
         I'm currently looking for any new opportunities, my inbox is always
         open. Whatever you have a question or just to say hi, i'll try my best
         to get back to you

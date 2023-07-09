@@ -5,12 +5,12 @@ import { motion as m } from "framer-motion";
 
 export default function About() {
   const tech: string[] = [
-    "Javascript (ES6+)",
-    "Typescript",
     "ReactJS",
-    "NextJS",
+    "Typescript",
+    "NextJS 13",
     "Tailwind CSS",
     "Neovim (IDE)",
+    "Javascript (ES6+)",
   ];
   return (
     <m.section
@@ -38,7 +38,7 @@ export default function About() {
             with the latest trends in web development.
           </p>
           <p>Here are a few technologies i've been working with recently</p>
-          <ul className="w-72 lg:w-96 grid grid-cols-2 list-inside list-disc leading-5">
+          <ul className="ul-tech">
             {tech.map((item, id) => (
               <li key={id} className={`${mono.className} text-sm`}>
                 {item}

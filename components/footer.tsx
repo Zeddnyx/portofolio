@@ -39,7 +39,7 @@ export default function footer() {
 
       {/* Social Desktop Mail */}
       <m.div
-        initial={{ y: 300 }}
+        initial={{ y: 330 }}
         animate={{ y: 0 }}
         transition={{ duration: 1 }}
         className="social-desktop-email"
