@@ -5,16 +5,17 @@ import { useState } from "react";
 
 interface IExperience {
   exp: {
+    id: number;
     title: string;
     date: string;
     story: string;
   }[];
   current?: number;
-  onClick?: (id: number) => void;
+  setCurrent?: (id: number) => void;
 }
 
 export default function Experience() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState<number>(0);
 
   return (
     <MotionOpacity>
@@ -28,7 +29,7 @@ export default function Experience() {
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-3">
           <div>
-            <Title exp={exp} onClick={(id) => setCurrent(id)} />
+            <Title exp={exp} setCurrent={setCurrent} />
           </div>
 
           <div className="col-span-4">
@@ -40,15 +41,15 @@ export default function Experience() {
   );
 }
 
-const Title = ({ exp, onClick }: IExperience) => {
+const Title = ({ exp, setCurrent }: IExperience) => {
   return (
     <div className="experience-list">
-      {exp.map((item, id) => {
+      {exp.map((item) => {
         return (
           <button
-            onClick={() => onClick(id)}
+            onClick={() => setCurrent?.(item.id)}
             className="experience-title"
-            key={id}
+            key={item.id}
           >
             <p>{item.title}</p>
           </button>
@@ -58,16 +59,17 @@ const Title = ({ exp, onClick }: IExperience) => {
   );
 };
 
-const Item = ({ exp, current }: IExperience) => {
+const Item = ({ exp, current = 0 }: IExperience) => {
   return (
     <>
       <div className="experience-item">
         <div>
-          <h3>{exp[current].title}</h3>
-          <p>{exp[current].date}</p>
+          <h3>{exp[current]?.title}</h3>
+          <p>{exp[current]?.date}</p>
         </div>
       </div>
-      <p>{exp[current].story}</p>
+      <p>{exp[current]?.story}</p>
     </>
   );
 };
+
