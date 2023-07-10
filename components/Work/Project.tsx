@@ -5,16 +5,16 @@ import { BiLinkExternal } from "react-icons/bi";
 import { mono, mont } from "@/utils/fonts";
 
 interface ProjectProps {
-  id?: number;
-  title: string;
-  desc: string;
-  tech: string[];
-  link: string;
-  live?: string;
-  image?: any;
+  project: {
+    title: string;
+    link: string;
+    live: string;
+    desc: string;
+    tech: string[];
+  }[];
 }
 
-export default function Project({ project }: ProjectProps[]) {
+export default function Project({ project }: ProjectProps) {
   return (
     <>
       {project.map((item, id) => {

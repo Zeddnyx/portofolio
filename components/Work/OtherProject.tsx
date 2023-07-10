@@ -1,19 +1,19 @@
 import React from 'react'
 import { FiGithub, FiFolder } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
-import { mono, mont } from "@/utils/fonts";
+import { mono } from "@/utils/fonts";
 
 export interface OtherProjectProps {
-  id?: number;
-  title: string;
-  desc: string;
-  tech: string[];
-  link: string;
-  live?: string;
-  image?: any;
+  otherProject: {
+    title: string;
+    link: string;
+    live: string;
+    desc: string;
+    tech: string[];
+  }[]
 }
 
-export default function OtherProject({ otherProject }: OtherProjectProps[]) {
+export default function OtherProject({ otherProject }: OtherProjectProps) {
   return (
     <>
       {otherProject.map((item, id) => (
