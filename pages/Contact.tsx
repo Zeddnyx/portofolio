@@ -2,7 +2,7 @@ import React from "react";
 import { mono, mont } from "@/utils/fonts";
 import { motion as m } from "framer-motion";
 
-export default function page() {
+export default function Contact() {
   return (
     <m.section
       initial={{ y: 200, opacity: 0 }}

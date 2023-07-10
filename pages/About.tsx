@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { mont, mono } from "@/utils/fonts";
-import { motion as m } from "framer-motion";
+import { MotionOpacity } from "@/components/Motion";
 
 export default function About() {
   const tech: string[] = [
@@ -13,15 +13,8 @@ export default function About() {
     "Javascript (ES6+)",
   ];
   return (
-    <m.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      viewport={{ once: false, amount: 0.5 }}
-      className="mb-20 py-36 xl3:mx-40"
-      id="about"
-    >
-      <h2 className={mont.className} >
+    <MotionOpacity className="mb-20 py-36 xl3:mx-40" id="about">
+      <h2 className={mont.className}>
         <span className={`${mono.className} text-lg md:text-2xl text-cyan`}>
           01.{" "}
         </span>
@@ -32,10 +25,11 @@ export default function About() {
           <p className="break-normal">
             Hi, My name is <span className="text-cyan">Jaenudin</span> but i
             would like if you call me <span className="text-cyan">Zedd</span>,
-            i'm a self-tough frontend developer who loves to create beautiful and
-            functional websites. In my spare time, configuring Neovim to streamline my workflow. I am
-            passionate about learning new technologies and staying up-to-date
-            with the latest trends in web development.
+            i'm a self-tough frontend developer who loves to create beautiful
+            and functional websites. In my spare time, configuring Neovim to
+            streamline my workflow. I am passionate about learning new
+            technologies and staying up-to-date with the latest trends in web
+            development.
           </p>
           <p>Here are a few technologies i've been working with recently</p>
           <ul className="ul-tech">
@@ -59,6 +53,6 @@ export default function About() {
           />
         </div>
       </div>
-    </m.section>
+    </MotionOpacity>
   );
 }

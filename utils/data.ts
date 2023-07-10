@@ -11,14 +11,44 @@ export const list: List[] = [
   {
     link: "about",
   },
-  // {
-  //   link: "experience",
-  // },
+  {
+    link: "experience",
+  },
   {
     link: "work",
   },
   {
     link: "contact",
+  },
+];
+export const experience: Experience[] = [
+  {
+    id: 0,
+    title: "Deborahtech",
+    date: "February 2023",
+    story:
+      "I have experience working as a freelance web developer at Deborahtech, where I helped clients turn their designs from Figma into fully functional websites. This experience has taught me the importance of attention to detail and the ability to work closely with clients to ensure their vision is realized.",
+  },
+  {
+    id: 1,
+    title: "Electrindo",
+    date: "May 2023",
+    story:
+      "Im working with other team engineer, develop, maintained and styled interactive web dashboard, mainly focused build dashboard chart for monitoring machine",
+  },
+  {
+    id: 2,
+    title: "TemanTrip",
+    date: "February 2023",
+    story:
+      "I am working as an intern at a startup, where I have been involved in various projects ranging from building responsive web pages to developing new features for existing applications. This experience has allowed me to working with modern web technologies and has honed my skills in problem-solving and collaboration.",
+  },
+  {
+    id: 3,
+    title: "Freelance",
+    date: "January 2023",
+    story:
+      "I have experience working as a freelance web developer, where I helped clients turn their designs from Figma into fully functional websites. This experience has taught me the importance of attention to detail and the ability to work closely with clients to ensure their vision is realized.",
   },
 ];
 export const social: Social[] = [
@@ -103,35 +133,5 @@ export const otherProject: Project[] = [
     tech: ["React", "Tailwind", "Netlify"],
     link: "https://github.com/Zeddnyx/urlShortly",
     live: "https://zedd-url-shortly.netlify.app/",
-  },
-];
-export const experience: Experience[] = [
-  {
-    id: 0,
-    title: "Freelance",
-    date: "February 2023",
-    story:
-      "I have experience working as a freelance web developer, where I helped clients turn their designs from Figma into fully functional websites. This experience has taught me the importance of attention to detail and the ability to work closely with clients to ensure their vision is realized.",
-  },
-  {
-    id: 1,
-    title: "Electrindo",
-    date: "May 2023",
-    story:
-      "Im working with other team engineer, develop, maintained and styled interactive web dashboard, mainly focused build dashboard chart for monitoring machine",
-  },
-  {
-    id: 2,
-    title: "TemanTrip",
-    date: "February 2023",
-    story:
-      "I am working as an intern at a startup, where I have been involved in various projects ranging from building responsive web pages to developing new features for existing applications. This experience has allowed me to working with modern web technologies and has honed my skills in problem-solving and collaboration.",
-  },
-  {
-    id: 3,
-    title: "Freelance",
-    date: "January 2023",
-    story:
-      "I have experience working as a freelance web developer, where I helped clients turn their designs from Figma into fully functional websites. This experience has taught me the importance of attention to detail and the ability to work closely with clients to ensure their vision is realized.",
   },
 ];

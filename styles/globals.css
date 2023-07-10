@@ -98,7 +98,7 @@
 .experience-title {
   @apply hover:text-cyan hover:border-b-2 border-cyan md:hover:border-b-0 md:hover:border-l-2 md:px-5 py-3 md:py-0 px-10 transition-all duration-300 h-10 md:h-full md:w-full md:flex md:items-center text-center cursor-pointer hover:bg-mainBg3
 }
-.experience-title-isi {
+.experience-item {
   @apply md:mt-3 grid gap-3
 }
 
