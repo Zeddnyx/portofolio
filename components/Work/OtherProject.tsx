@@ -3,7 +3,17 @@ import { FiGithub, FiFolder } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
 import { mono, mont } from "@/utils/fonts";
 
-export default function OtherProject({ otherProject }: any) {
+export interface OtherProjectProps {
+  id?: number;
+  title: string;
+  desc: string;
+  tech: string[];
+  link: string;
+  live?: string;
+  image?: any;
+}
+
+export default function OtherProject({ otherProject }: OtherProjectProps) {
   return (
     <>
       {otherProject.map((item, id) => (

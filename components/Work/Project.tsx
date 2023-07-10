@@ -4,7 +4,17 @@ import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
 import { mono, mont } from "@/utils/fonts";
 
-export default function Project({ project }: any) {
+interface ProjectProps {
+  id?: number;
+  title: string;
+  desc: string;
+  tech: string[];
+  link: string;
+  live?: string;
+  image?: any;
+}
+
+export default function Project({ project }: ProjectProps) {
   return (
     <>
       {project.map((item, id) => {
