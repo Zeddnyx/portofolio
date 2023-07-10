@@ -14,7 +14,7 @@ interface ProjectProps {
   image?: any;
 }
 
-export default function Project({ project }: ProjectProps) {
+export default function Project({ project }: ProjectProps[]) {
   return (
     <>
       {project.map((item, id) => {

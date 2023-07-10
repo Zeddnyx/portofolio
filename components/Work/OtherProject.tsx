@@ -13,7 +13,7 @@ export interface OtherProjectProps {
   image?: any;
 }
 
-export default function OtherProject({ otherProject }: OtherProjectProps) {
+export default function OtherProject({ otherProject }: OtherProjectProps[]) {
   return (
     <>
       {otherProject.map((item, id) => (
