@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import Nvim from "../public/nvim.jpg";
 import Time from "../public/time.jpg";
 import Movie from "../public/movie.jpg";
-import { Experience, List, Project, Social } from "./model";
+import { Experience, List,  Social } from "./model";
 
 export const list: List[] = [
   {
@@ -75,7 +75,7 @@ export const social: Social[] = [
   },
 ];
 
-export const project: Project[] = [
+export const project = [
   {
     title: "Neovim Configuration",
     desc: "I have  optimized for fast startup times. I have added snippets similliar to those found in VSCode. this setup is perfect for frontend development and has streamlined my workflow by providing a comportable and efficient environment for coding",
@@ -101,7 +101,7 @@ export const project: Project[] = [
   },
 ];
 
-export const otherProject: Project[] = [
+export const otherProject = [
   {
     id: 0,
     title: "Ztools",

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { mono, mont } from "@/utils/fonts";
 import { project, otherProject } from "@/utils/data";
 import { MotionOpacity } from "@/components/Motion";

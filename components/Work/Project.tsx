@@ -8,9 +8,10 @@ interface ProjectProps {
   project: {
     title: string;
     link: string;
-    live: string;
+    live?: string;
     desc: string;
     tech: string[];
+    image?: any;
   }[];
 }
 

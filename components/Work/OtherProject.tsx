@@ -16,7 +16,7 @@ export interface OtherProjectProps {
 export default function OtherProject({ otherProject }: OtherProjectProps) {
   return (
     <>
-      {otherProject.map((item, id) => (
+      {otherProject.map(item => (
         <div key={item.title} className="p-5 bg-mainBg2 grid gap-3 rounded">
           <div className="flex items-center justify-between">
             <i className="text-cyan">
