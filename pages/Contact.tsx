@@ -1,17 +1,10 @@
 import React from "react";
 import { mono, mont } from "@/utils/fonts";
-import { motion as m } from "framer-motion";
+import { MotionUpOpacity } from "@/components/Motion"
 
 export default function Contact() {
   return (
-    <m.section
-      initial={{ y: 200, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: false, amount: 0.5 }}
-      className="contact"
-      id="contact"
-    >
+    <MotionUpOpacity className="contact" id="contact">
       <div>
         <span className={`${mono.className} text-xs md:text-lg text-cyan`}>
           04. What's Next?
@@ -26,6 +19,6 @@ export default function Contact() {
       <button type="submit" className={`${mono.className} mt-5 btn w-28`}>
         <a href="mailto:zeddnyx08@gmail.com">Say Hello</a>
       </button>
-    </m.section>
+    </MotionUpOpacity>
   );
 }

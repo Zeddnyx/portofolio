@@ -20,3 +20,33 @@ export function MotionOpacity({ children, id, className }: any) {
     </m.section>
   );
 }
+
+export function MotionUpOpacity({ children, className, id }: any) {
+  return (
+    <m.section
+      initial={{ y: 200, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false, amount: 0.5 }}
+      className={className}
+      id={id}
+    >
+      {children}
+    </m.section>
+  )
+}
+
+export function MotionDownOpacity({ children, className, id }: any) {
+  return (
+    <m.section
+      initial={{ y: -500, opacity: 0 }}
+      animate={{ y: -100, opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false, amount: 0.5 }}
+      className={className}
+      id={id}
+    >
+      {children}
+    </m.section>
+  )
+}

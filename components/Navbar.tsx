@@ -5,6 +5,7 @@ import { mono, mont } from "@/utils/fonts";
 import { motion as m } from "framer-motion";
 
 export default function Navbar() {
+  const [current, setCurrent] = useState<number | null>(null)
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
     setMenu(!menu);
@@ -30,7 +31,11 @@ export default function Navbar() {
         className={`${mono.className} navDesktop text-base`}
       >
         {list.map((item, id) => (
-          <li key={item.link} className="li-nav">
+          <li
+            onClick={() => setCurrent(id)}
+            key={item.link}
+            className={`li-nav ${current === id ? "text-cyan" : ""}`}
+          >
             <a href={`#${item.link}`}>
               <span className="text-cyan text-xs">0{id + 1}. </span>
               {item.link}

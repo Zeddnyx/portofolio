@@ -25,7 +25,7 @@ export const experience: Experience[] = [
   {
     id: 0,
     title: "Deborahtech",
-    date: "February 2023",
+    date: "July 2023",
     story:
       "I have experience working as a freelance web developer at Deborahtech, where I helped clients turn their designs from Figma into fully functional websites. This experience has taught me the importance of attention to detail and the ability to work closely with clients to ensure their vision is realized.",
   },
@@ -88,16 +88,16 @@ export const project = [
     desc: "A movie app built with ReactJS, and Tanstack's powerful fetching capabilities. With this app, you'll be able to search for movies by title, see detail for movie. Plus, with the sleek and intuitive user interface, you'll have all the information you need at your fingertips. Whether you're a casual moviegoer or a hardcore cinephile, this app is the perfect tool for discovering new films and staying up-to-date on the latest releases.",
     tech: ["React", "Vite", "Tailwind", "Tanstack", "Vercel"],
     link: "https://github.com/Zeddnyx/parah-lu",
-    live: "https://zedd-movie.vercel.app",
     image: Movie,
+    live: "https://zedd-movie.vercel.app",
   },
   {
     title: "Tracking Dashboard",
     desc: "I created as part of challanges on FrontendMentor. This challanged me to create a responsive design that works seamlessly across both desktop and mobile devices. I was able to use my skills in grid layouts to create a visually appealing design that is both ease to use abd higly functional",
     tech: ["React", "Tailwind", "Netlify"],
     link: "https://github.com/Zeddnyx/timeTrackingDashboard",
-    live: "https://zedd-dashboard-time.netlify.app",
     image: Time,
+    live: "https://zedd-dashboard-time.netlify.app",
   },
 ];
 

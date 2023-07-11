@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
-import { mono, mont } from "@/utils/fonts";
+import { mono } from "@/utils/fonts";
 
 interface ProjectProps {
   project: {

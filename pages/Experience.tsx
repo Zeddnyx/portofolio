@@ -29,7 +29,7 @@ export default function Experience() {
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-3">
           <div>
-            <Title exp={exp} setCurrent={setCurrent} />
+            <Title exp={exp} current={current} setCurrent={setCurrent} />
           </div>
 
           <div className="col-span-4">
@@ -41,14 +41,16 @@ export default function Experience() {
   );
 }
 
-const Title = ({ exp, setCurrent }: IExperience) => {
+const Title = ({ exp, setCurrent, current = 0 }: IExperience) => {
   return (
     <div className="experience-list">
       {exp.map((item) => {
         return (
           <button
             onClick={() => setCurrent?.(item.id)}
-            className="experience-title"
+            className={`experience-title ${
+              current === item.id ? "experience-title-active" : ""
+            }`}
             key={item.id}
           >
             <p>{item.title}</p>
@@ -72,4 +74,3 @@ const Item = ({ exp, current = 0 }: IExperience) => {
     </>
   );
 };
-
