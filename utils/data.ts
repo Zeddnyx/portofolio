@@ -2,10 +2,10 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandTelegram } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
-import Nvim from "../public/nvim.jpg";
+import Nvim  from "../public/nvim.png";
 import Time from "../public/time.jpg";
-import Movie from "../public/movie.jpg";
-import { Experience, List,  Social } from "./model";
+import Movie  from "../public/movie.png";
+import { Experience, List, Social } from "./model";
 
 export const list: List[] = [
   {

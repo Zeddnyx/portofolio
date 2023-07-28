@@ -45,7 +45,7 @@ export default function About() {
             <Image
               priority
               className="about-img-img"
-              src="/me.jpg"
+              src="/zedd.jpg"
               width={800}
               height={800}
               alt="Zedd"
