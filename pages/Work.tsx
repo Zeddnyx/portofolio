@@ -1,8 +1,8 @@
 import { mono, mont } from "@/utils/fonts";
 import { project, otherProject } from "@/utils/data";
-import { MotionOpacityDiv } from "@/components/Motion";
 import Project from "@/components/Work/Project";
 import OtherProject from "@/components/Work/OtherProject";
+import Aos from "@/components/Aos";
 
 export default function Work() {
   return (
@@ -13,18 +13,20 @@ export default function Work() {
         </span>
         Some Things I've Built
       </h2>
+      <Aos>
         <div className="parent-work">
           <Project project={project} />
         </div>
+      </Aos>
 
-      <MotionOpacityDiv>
-      <div className="mt-14">
-        <h3 className="text-center mb-4">Other Noteworthy Projects</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <OtherProject otherProject={otherProject} />
+      <Aos>
+        <div className="mt-14">
+          <h3 className="text-center mb-4">Other Noteworthy Projects</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <OtherProject otherProject={otherProject} />
+          </div>
         </div>
-      </div>
-      </MotionOpacityDiv>
+      </Aos>
     </section>
   );
 }

@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Portofolio Zedd",
-  description: "A portofolio using NextJS",
+  title: "Portofolio",
+  description: "personal portofolio using Next.js 13",
 };
 
 interface Child {

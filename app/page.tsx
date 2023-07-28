@@ -1,4 +1,3 @@
-"use client"
 import HomePage from "@/pages/HomePage"
 import About  from "@/pages/About"
 import Experience from "@/pages/Experience"

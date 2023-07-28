@@ -1,7 +1,8 @@
-import { MotionOpacity } from "@/components/Motion";
+"use client"
 import { experience as exp } from "@/utils/data";
 import { mono, mont } from "@/utils/fonts";
 import { useState } from "react";
+import Aos from "@/components/Aos";
 
 interface IExperience {
   exp: {
@@ -18,8 +19,8 @@ export default function Experience() {
   const [current, setCurrent] = useState<number>(0);
 
   return (
-    <MotionOpacity>
-      <div className="sm:mx-10 py-40 lg:mx-10 xl:mx-40 mt-40" id="experience">
+    <Aos>
+      <section className="sm:mx-10 py-40 lg:mx-10 xl:mx-40 mt-40" id="experience">
         <h2 className={mont.className}>
           <span className={`${mono.className} text-lg md:text-2xl text-cyan`}>
             03.{" "}
@@ -36,8 +37,8 @@ export default function Experience() {
             <Item exp={exp} current={current} />
           </div>
         </div>
-      </div>
-    </MotionOpacity>
+      </section>
+    </Aos>
   );
 }
 

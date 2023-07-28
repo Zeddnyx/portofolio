@@ -48,6 +48,9 @@
 .rounded-bg-cyan2 {
   @apply bg-mainBg2 px-4 p-1 rounded-full text-cyan
 }
+.span-title {
+  @apply text-lg md:text-2xl text-cyan
+}
 
 /* Navbar Section */
 .menu {

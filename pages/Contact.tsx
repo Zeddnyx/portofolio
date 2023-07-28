@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { mono, mont } from "@/utils/fonts";
 import { MotionUpOpacity } from "@/components/Motion"
