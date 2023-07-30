@@ -2,9 +2,9 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandTelegram } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
-import Nvim  from "../public/nvim.png";
-import Time from "../public/time.jpg";
-import Movie  from "../public/movie.png";
+import Nvim from "../public/nvim.png";
+import Ztools from "../public/ztools.png";
+import Movie from "../public/movie.png";
 import { Experience, List, Social } from "./model";
 
 export const list: List[] = [
@@ -77,38 +77,38 @@ export const social: Social[] = [
 
 export const project = [
   {
+    title: "Movie App",
+    desc: "A movie app built with ReactJS, and Tanstack's powerful fetching capabilities. With this app, you'll be able to search for movies by title, see detail for movie. Plus, with the sleek and intuitive user interface, you'll have all the information you need at your fingertips. Whether you're a casual moviegoer or a hardcore cinephile, this app is the perfect tool for discovering new films and staying up-to-date on the latest releases.",
+    tech: ["React", "Vite", "Tailwind", "Tanstack", "Vercel"],
+    link: "https://github.com/Zeddnyx/MovieApp",
+    image: Movie,
+    live: "https://zedd-movie.vercel.app",
+  },
+  {
+    title: "Ztools",
+    desc: "Ztools is a simplistic yet highly functional web app that I have created to provide a variety of useful tools. The app is designed to be user-friendly and intuitive, and I am constantly updating it with new features and improvements to make it even more helpful. I am proud of this project because it showcases my ability to create practical solutions that are both aesthetically pleasing and highly functional.",
+    tech: ["NextJs", "Tailwind", "Tanstack", "Vercel"],
+    link: "https://github.com/Zeddnyx/parah-lu",
+    image: Ztools,
+    live: "https://ztools.vercel.app",
+  },
+  {
     title: "Neovim Configuration",
     desc: "I have  optimized for fast startup times. I have added snippets similliar to those found in VSCode. this setup is perfect for frontend development and has streamlined my workflow by providing a comportable and efficient environment for coding",
     tech: ["Lua", "Json"],
     link: "https://github.com/Zeddnyx/Znvim",
     image: Nvim,
   },
-  {
-    title: "Movie App",
-    desc: "A movie app built with ReactJS, and Tanstack's powerful fetching capabilities. With this app, you'll be able to search for movies by title, see detail for movie. Plus, with the sleek and intuitive user interface, you'll have all the information you need at your fingertips. Whether you're a casual moviegoer or a hardcore cinephile, this app is the perfect tool for discovering new films and staying up-to-date on the latest releases.",
-    tech: ["React", "Vite", "Tailwind", "Tanstack", "Vercel"],
-    link: "https://github.com/Zeddnyx/parah-lu",
-    image: Movie,
-    live: "https://zedd-movie.vercel.app",
-  },
-  {
-    title: "Tracking Dashboard",
-    desc: "I created as part of challanges on FrontendMentor. This challanged me to create a responsive design that works seamlessly across both desktop and mobile devices. I was able to use my skills in grid layouts to create a visually appealing design that is both ease to use abd higly functional",
-    tech: ["React", "Tailwind", "Netlify"],
-    link: "https://github.com/Zeddnyx/timeTrackingDashboard",
-    image: Time,
-    live: "https://zedd-dashboard-time.netlify.app",
-  },
 ];
 
 export const otherProject = [
   {
     id: 0,
-    title: "Ztools",
-    desc: "Ztools is simplistic yet highly functional web app that I have created to provide a variety of useful tools.",
-    tech: ["React", "Tailwind", "Vercel"],
-    link: "https://github.com/Zeddnyx/Ztools",
-    live: "https://ztools.vercel.app",
+    title: "Tracking Dashboard",
+    desc: "I created as part of challanges on FrontendMentor. This challanged me to create a responsive design that works seamlessly across both desktop and mobile devices.",
+    tech: ["React", "Tailwind", "Netlify"],
+    link: "https://github.com/Zeddnyx/timeTrackingDashboard",
+    live: "https://time-tracking-dashboard.netlify.app",
   },
   {
     id: 1,
