@@ -2,10 +2,10 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandTelegram } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
-import Nvim from "/nvim.png";
-import Ztools from "/ztools.png";
-import Movie from "/movie.png";
-import TemanTrip from "/temanTrip.png"
+import Nvim from "@/public/nvim.png";
+import Ztools from "@/public/ztools.png";
+import Movie from "@/public/movie.png";
+import TemanTrip from "@/public/temanTrip.png"
 import { Experience, List, Social } from "./model";
 
 export const list: List[] = [
@@ -41,7 +41,7 @@ export const experience: Experience[] = [
     id: 2,
     title: "TemanTrip",
     date: "February 2023",
-    certif: TemanTrip,
+    // certif: TemanTrip,
     story:
       "I am working as an intern at a startup, where I have been involved in various projects ranging from building responsive web pages to developing new features for existing applications. This experience has allowed me to working with modern web technologies and has honed my skills in problem-solving and collaboration.",
   },
