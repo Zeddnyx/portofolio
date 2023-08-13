@@ -4,8 +4,11 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Portofolio",
-  description: "personal portofolio using Next.js 13",
+  title: "Jaenudin portofolio",
+  description: "personal portofolio",
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 interface Child {

@@ -32,7 +32,7 @@ export default function Project({ project }: ProjectProps) {
 
               <ul className={`${mono.className} ul-tech-tag`}>
                 {item.tech.map((item, id) => (
-                  <li className="rounded-bg-cyan2" key={id}>
+                  <li className="rounded-bg-cyan1" key={id}>
                     {item}
                   </li>
                 ))}

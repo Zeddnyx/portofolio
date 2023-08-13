@@ -28,7 +28,7 @@ export default function Experience() {
           Where I've Worked
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-3 w-full">
           <div>
             <Title exp={exp} current={current} setCurrent={setCurrent} />
           </div>

@@ -1,8 +1,11 @@
 "use client";
+import Image from "next/image"
 import { useState } from "react";
 import { list } from "@/utils/data";
 import { mono, mont } from "@/utils/fonts";
 import { motion as m } from "framer-motion";
+import Zedd from "@/public/logo.png"
+
 
 export default function Navbar() {
   const [current, setCurrent] = useState<number | null>(null)
@@ -20,7 +23,9 @@ export default function Navbar() {
         transition={{ duration: 1 }}
         className={`${mont.className} text-xl md:text-2xl cursor-pointer`}
       >
-        <a href="#home">Zedd.</a>
+        <a href="#home">
+          <Image src={Zedd} alt="logo"height={30} width={30} />
+        </a>
       </m.h3>
 
       {/*Desktop Navigation*/}
