@@ -28,7 +28,7 @@ export default function OtherProject({ otherProject }: OtherProjectProps) {
               </a>
               <span className="hover:text-cyan">
                 {!!item.live ? (
-                  <a href={item.live}>
+                  <a target="_blank" href={item.live}>
                     <BiLinkExternal size="20" />
                   </a>
                 ) : (
@@ -38,7 +38,7 @@ export default function OtherProject({ otherProject }: OtherProjectProps) {
             </div>
           </div>
 
-          <a href={item.live ? item.live : item.link}>
+          <a target="_blank" href={item.live ? item.live : item.link}>
             <h3 className="text-gray1 text-xl hover:text-cyan cursor-pointer">
               {item.title}
             </h3>

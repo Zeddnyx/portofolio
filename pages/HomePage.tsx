@@ -19,7 +19,7 @@ export default function HomePage() {
         </p>
       </div>
       <button className="btn mt-10 w-28 h-10">
-        <a href="mailto:zeddnyx08@gmail.com" className={mono.className}>
+        <a target="_blank" href="mailto:zeddnyx08@gmail.com" className={mono.className}>
           Hire Me
         </a>
       </button>

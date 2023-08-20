@@ -22,7 +22,7 @@ export default function Project({ project }: ProjectProps) {
         return (
           <div key={id} className="parent-project-card">
             <div className="parent-project">
-              <a href={item.live ? item.live : item.link}>
+              <a target="_blank" href={item.live ? item.live : item.link}>
                 <h3 className="project-title">{item.title}</h3>
               </a>
 
@@ -45,7 +45,7 @@ export default function Project({ project }: ProjectProps) {
                 {/* !! = item.lenght != 0 */}
                 <span className="hover:text-cyan">
                   {!!item.live ? (
-                    <a href={item.live}>
+                    <a target="_blank" href={item.live}>
                       <BiLinkExternal size="20" />
                     </a>
                   ) : (

@@ -18,7 +18,7 @@ export default function Contact() {
         to get back to you
       </p>
       <button type="submit" className={`${mono.className} mt-5 btn w-28`}>
-        <a href="mailto:zeddnyx08@gmail.com">Say Hello</a>
+        <a target="_blank" href="mailto:zeddnyx08@gmail.com">Say Hello</a>
       </button>
     </MotionUpOpacity>
   );

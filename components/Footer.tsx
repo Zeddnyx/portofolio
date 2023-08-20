@@ -27,7 +27,7 @@ export default function Footer() {
         {social.slice(0, 3).map((item, id) => (
           <div className="flex flex-col items-center gap-2" key={id}>
             <div className="group flex gap-4">
-              <a href={item.link} className={`${mono.className} li-nav`}>
+              <a target="_blank" href={item.link} className={`${mono.className} li-nav`}>
                 <item.icon size="25" />
               </a>
               <span className="tooltip">

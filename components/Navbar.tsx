@@ -23,7 +23,7 @@ export default function Navbar() {
         transition={{ duration: 1 }}
         className={`${mont.className} text-xl md:text-2xl cursor-pointer`}
       >
-        <a href="#home">
+        <a target="_blank" href="#home">
           <Image src={Zedd} alt="logo"height={30} width={30} />
         </a>
       </m.h3>
@@ -41,7 +41,7 @@ export default function Navbar() {
             key={item.link}
             className={`li-nav ${current === id ? "text-cyan" : ""}`}
           >
-            <a href={`#${item.link}`}>
+            <a target="_blank" href={`#${item.link}`}>
               <span className="text-cyan text-xs">0{id + 1}. </span>
               {item.link}
             </a>
@@ -49,7 +49,7 @@ export default function Navbar() {
         ))}
         <li>
           <button className="btn w-20 p-5">
-            <a href="resume.pdf" download="resume.pdf">
+            <a target="_blank" href="resume.pdf" download="resume.pdf">
               Resume
             </a>
           </button>
@@ -76,12 +76,12 @@ export default function Navbar() {
         {list.map((item, id) => (
           <li key={item.link} className="li-nav text-lg ">
             <span className="text-cyan text-xs">0{id + 1}. </span>
-            <a href={`#${item.link}`}>{item.link}</a>
+            <a target="_blank" href={`#${item.link}`}>{item.link}</a>
           </li>
         ))}
         <li>
           <button className="btn w-28 p-5 py-6">
-            <a href="resume.pdf" download="resume.pdf">
+            <a target="_blank" href="resume.pdf" download="resume.pdf">
               Resume
             </a>
           </button>
