@@ -5,7 +5,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import Nvim from "@/public/nvim.png";
 import Ztools from "@/public/ztools.png";
 import Movie from "@/public/movie.png";
-import TemanTrip from "@/public/temanTrip.png"
 import { Experience, List, Social } from "./model";
 
 export const list: List[] = [

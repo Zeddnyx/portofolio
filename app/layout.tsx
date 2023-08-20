@@ -5,7 +5,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Jaenudin portofolio",
-  description: "personal portofolio",
+  description: "Personal portofolio of Jaenudin",
   icons: {
     icon: "/favicon.ico"
   }
