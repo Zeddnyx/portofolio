@@ -14,6 +14,9 @@ export default function Footer() {
           </a>
         ))}
       </div>
+      <div className={mono.className}>
+        <p>Built and Designed by Jaenudin</p>
+      </div>
       {/* Social Desktop */}
       <m.div
         initial={{ y: 330 }}

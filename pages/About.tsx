@@ -3,21 +3,11 @@ import { mont, mono } from "@/utils/fonts";
 import Aos from "@/components/Aos";
 
 export default function About() {
-  const tech: string[] = [
-    "ReactJS",
-    "Typescript",
-    "NextJS 13",
-    "Tailwind CSS",
-    "Neovim (IDE)",
-    "Javascript (ES6+)",
-  ];
   return (
     <Aos>
       <section id="about">
         <h2 className={mont.className}>
-          <span className={`${mono.className} span-title`}>
-            01.{" "}
-          </span>
+          <span className={`${mono.className} span-title`}>01. </span>
           About Me
         </h2>
         <div className="parent-about">
@@ -57,3 +47,12 @@ export default function About() {
     </Aos>
   );
 }
+
+const tech: string[] = [
+  "ReactJS",
+  "Typescript",
+  "NextJS 13",
+  "Tailwind CSS",
+  "Neovim (IDE)",
+  "Javascript (ES6+)",
+];

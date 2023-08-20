@@ -1,10 +1,12 @@
-import { mont, pop} from "@/utils/fonts";
+import { mont, pop, mono } from "@/utils/fonts";
 import { MotionDownOpacity } from "@/components/Motion";
 
 export default function HomePage() {
-
   return (
-    <MotionDownOpacity id="home" className={`${mont.className} py-40 my-36 mb-96 md:mb-80`}>
+    <MotionDownOpacity
+      id="home"
+      className={`${mont.className} py-40 my-36 mb-96 md:mb-80`}
+    >
       <div className="grid gap-2">
         <p className="text-cyan">Hi, i'am</p>
         <div className={`${pop.className} grid gap-1`}>
@@ -16,6 +18,11 @@ export default function HomePage() {
           i'm currently looking for any new opportunities.
         </p>
       </div>
+      <button className="btn mt-10 w-28 h-10">
+        <a href="mailto:zeddnyx08@gmail.com" className={mono.className}>
+          Hire Me
+        </a>
+      </button>
     </MotionDownOpacity>
   );
 }
