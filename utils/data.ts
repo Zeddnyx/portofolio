@@ -1,7 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { TbBrandTelegram } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import Nvim from "@/public/nvim.png";
 import Ztools from "@/public/ztools.png";
 import Movie from "@/public/movie.png";
@@ -62,6 +62,11 @@ export const social: Social[] = [
     icon: TbBrandTelegram,
     link: "https://t.me/Zeddnyx",
     title: "Telegram",
+  },
+  {
+    icon: AiOutlineWhatsApp,
+    link: "https://wa.me/6285776364053",
+    title: "WhatsApp",
   },
   {
     icon: FiLinkedin,

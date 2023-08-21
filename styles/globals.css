@@ -16,7 +16,7 @@
     @apply outline-none
   }
   section {
-    @apply px-10 md:px-24 lg:px-36 xl:px-40 text-gray2 my-20
+    @apply px-10 md:px-24 lg:px-36 xl:px-40 text-gray2 my-10
   }
   h1 {
     @apply font-semibold text-5xl md:text-6xl xl:text-7xl text-gray1;
@@ -136,7 +136,7 @@
 
 /* Contact section */
 .contact {
-@apply text-center flex flex-col justify-center items-center gap-3 my-60
+@apply text-center flex flex-col justify-center items-center gap-3 my-40
 }
 
 /* Footer Section */

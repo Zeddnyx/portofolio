@@ -23,7 +23,7 @@ export default function Navbar() {
         transition={{ duration: 1 }}
         className={`${mont.className} text-xl md:text-2xl cursor-pointer`}
       >
-        <a target="_blank" href="#home">
+        <a href="#home">
           <Image src={Zedd} alt="logo"height={30} width={30} />
         </a>
       </m.h3>
@@ -41,7 +41,7 @@ export default function Navbar() {
             key={item.link}
             className={`li-nav ${current === id ? "text-cyan" : ""}`}
           >
-            <a target="_blank" href={`#${item.link}`}>
+            <a href={`#${item.link}`}>
               <span className="text-cyan text-xs">0{id + 1}. </span>
               {item.link}
             </a>
@@ -76,7 +76,7 @@ export default function Navbar() {
         {list.map((item, id) => (
           <li key={item.link} className="li-nav text-lg ">
             <span className="text-cyan text-xs">0{id + 1}. </span>
-            <a target="_blank" href={`#${item.link}`}>{item.link}</a>
+            <a href={`#${item.link}`}>{item.link}</a>
           </li>
         ))}
         <li>
