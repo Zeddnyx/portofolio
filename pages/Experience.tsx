@@ -6,8 +6,8 @@ import Aos from "@/components/Aos";
 
 interface IExperience {
   exp: {
-    id: number;
     title: string;
+    title_full: string;
     date: string;
     story: string;
   }[];
@@ -45,14 +45,14 @@ export default function Experience() {
 const Title = ({ exp, setCurrent, current = 0 }: IExperience) => {
   return (
     <div className="experience-list">
-      {exp.map((item) => {
+      {exp.map((item,id) => {
         return (
           <button
-            onClick={() => setCurrent?.(item.id)}
+            onClick={() => setCurrent?.(id)}
             className={`experience-title ${
-              current === item.id ? "experience-title-active" : ""
+              current === id ? "experience-title-active" : ""
             }`}
-            key={item.id}
+            key={id}
           >
             <p>{item.title}</p>
           </button>
@@ -67,7 +67,7 @@ const Item = ({ exp, current = 0 }: IExperience) => {
     <>
       <div className="experience-item">
         <div>
-          <h3>{exp[current]?.title}</h3>
+          <h3>{exp[current]?.title_full}</h3>
           <p>{exp[current]?.date}</p>
         </div>
       </div>

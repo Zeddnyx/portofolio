@@ -12,8 +12,8 @@ export interface Social {
 }
 
 export interface Experience {
-  id: number;
   title: string;
+  title_full: string;
   date: string;
   story: string;
 }
