@@ -9,23 +9,27 @@ import { Experience, List, Social } from "./types";
 
 export const list: List[] = [
   {
-    link: "about",
+    title: "about",
   },
   {
-    link: "experience",
+    title: "experience",
   },
   {
-    link: "work",
+    title: "work",
   },
   {
-    link: "contact",
+    title: "blog",
+    href: "/blog"
+  },
+  {
+    title: "contact",
   },
 ];
 export const experience: Experience[] = [
   {
     title: "Gebra",
     title_full: "Gebra Kreativa Global",
-    date: "Sep 2023",
+    date: "Sept 2023",
     story:
       "Currently working as a frontend developer at Gebra Kreativa, where I am responsible for developing and maintaining the project company and client website.",
   },
@@ -46,7 +50,7 @@ export const experience: Experience[] = [
   {
     title: "TemanTrip",
     title_full: "TemanTrip",
-    date: "February 2023",
+    date: "Feb 2023",
     // certif: TemanTrip,
     story:
       "I am working as an intern at a startup, where I have been involved in various projects ranging from building responsive web pages to developing new features for existing applications. This experience has allowed me to working with modern web technologies and has honed my skills in problem-solving and collaboration.",

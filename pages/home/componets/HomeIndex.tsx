@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <MotionDownOpacity
       id="home"
-      className={`${mont.className} pt-40 mb-60 md:mb-80`}
+      className={`${mont.className} h-screen md:h-80 mt-80 md:mt-52 md:mb-40`}
     >
       <div className="grid gap-2">
         <p className="text-cyan">Hi, i'am</p>
@@ -16,7 +16,7 @@ export default function HomePage() {
         </div>
         <p className="xs:pr-0 sm:pr-44 md:pr-72 xl:pr-[590px]">
           i'm a frontend developer, passionate about learning and collaboration,
-          i'm currently working at Gebra Kreative Global
+          i'm currently working at Gebra Kreativa Global
         </p>
       </div>
       {!isWork && (

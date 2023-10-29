@@ -19,7 +19,7 @@ export default function Footer() {
       </div>
       {/* Social Desktop */}
       <m.div
-        initial={{ y: 330 }}
+        initial={{ y: 430 }}
         animate={{ y: 0 }}
         transition={{ duration: 1 }}
         className="social-desktop"
@@ -42,7 +42,7 @@ export default function Footer() {
 
       {/* Social Desktop Mail */}
       <m.div
-        initial={{ y: 330 }}
+        initial={{ y: 430 }}
         animate={{ y: 0 }}
         transition={{ duration: 1 }}
         className="social-desktop-email"

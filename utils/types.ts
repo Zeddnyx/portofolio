@@ -1,7 +1,8 @@
 import { IconType } from "react-icons";
 
 export interface List {
-  link: string;
+  href?: string;
+  title: string;
 }
 
 export interface Social {

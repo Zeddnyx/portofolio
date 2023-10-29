@@ -1,14 +1,16 @@
 "use client";
-import Image from "next/image"
+
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+
 import { list } from "@/utils/data";
 import { mono, mont } from "@/utils/fonts";
 import { motion as m } from "framer-motion";
-import Zedd from "@/public/logo.png"
-
+import Zedd from "@/public/logo.png";
 
 export default function Navbar() {
-  const [current, setCurrent] = useState<number | null>(null)
+  const [current, setCurrent] = useState<number | null>(null);
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
     setMenu(!menu);
@@ -24,7 +26,7 @@ export default function Navbar() {
         className={`${mont.className} text-xl md:text-2xl cursor-pointer`}
       >
         <a href="#home">
-          <Image src={Zedd} alt="logo"height={30} width={30} />
+          <Image src={Zedd} alt="logo" height={30} width={30} />
         </a>
       </m.h3>
 
@@ -38,13 +40,13 @@ export default function Navbar() {
         {list.map((item, id) => (
           <li
             onClick={() => setCurrent(id)}
-            key={item.link}
+            key={item.title}
             className={`li-nav ${current === id ? "text-cyan" : ""}`}
           >
-            <a href={`#${item.link}`}>
+            <Link href={item.href ? item.href : `#${item.title}`}>
               <span className="text-cyan text-xs">0{id + 1}. </span>
-              {item.link}
-            </a>
+              {item.title}
+            </Link>
           </li>
         ))}
         <li>
@@ -70,13 +72,14 @@ export default function Navbar() {
       {/*Mobile Navigation*/}
       <ul
         onClick={handleMenu}
-        className={`${mono.className} ${!menu ? "navMobileOff" : `left-0`
-          } navMobile`}
+        className={`${mono.className} ${
+          !menu ? "navMobileOff" : `left-0`
+        } navMobile`}
       >
         {list.map((item, id) => (
-          <li key={item.link} className="li-nav text-lg ">
+          <li key={item.title} className="li-nav text-lg ">
             <span className="text-cyan text-xs">0{id + 1}. </span>
-            <a href={`#${item.link}`}>{item.link}</a>
+            <a href={`#${item.title}`}>{item.title}</a>
           </li>
         ))}
         <li>
