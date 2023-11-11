@@ -2,7 +2,7 @@ import Homepage from "@/pages/home/page"
 
 export default function page() {
   return (
-    <main>
+    <main className="container mx-auto">
       <Homepage />
     </main>
   );

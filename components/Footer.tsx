@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className={mono.className}>
+    <footer className={`${mono.className} container mx-auto`}>
       {/* Social Mobile */}
       <div className="social-mobile">
         {social.slice(0, 5).map((item, id) => (
@@ -14,7 +14,7 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <div className={`${mono.className} text-sm md:text-base`}>
+      <div className={`${mono.className} text-xs md:text-base`}>
         <p>Built and Designed by Jaenudin</p>
       </div>
       {/* Social Desktop */}

@@ -6,7 +6,7 @@ import Aos from "@/components/Aos";
 
 export default function Work() {
   return (
-    <section className="h-[100%] py-48 mt-40 pb-20 xl:mx-20" id="work">
+    <section className="h-[100%] py-28 mt-20 pb-20 xl:mx-20" id="work">
       <h2 className={mont.className}>
         <span className={`${mono.className} text-lg md:text-2xl text-cyan`}>
           03.{" "}

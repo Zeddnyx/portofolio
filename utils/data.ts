@@ -9,6 +9,9 @@ import { Experience, List, Social } from "./types";
 
 export const list: List[] = [
   {
+    title: "home",
+  },
+  {
     title: "about",
   },
   {
@@ -17,10 +20,10 @@ export const list: List[] = [
   {
     title: "work",
   },
-  {
-    title: "blog",
-    href: "/blog"
-  },
+//   {
+//     title: "blog",
+//     href: "/blog"
+//   },
   {
     title: "contact",
   },

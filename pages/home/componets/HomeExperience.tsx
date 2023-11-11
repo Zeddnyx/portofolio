@@ -20,7 +20,7 @@ export default function Experience() {
 
   return (
     <Aos>
-      <section className="sm:mx-10 py-28 lg:mx-10 xl:mx-40 mt-40" id="experience">
+      <section className="sm:mx-10 py-28 lg:mx-10 xl:mx-20 mt-36" id="experience">
         <h2 className={mont.className}>
           <span className={`${mono.className} text-lg md:text-2xl text-cyan`}>
             03.{" "}

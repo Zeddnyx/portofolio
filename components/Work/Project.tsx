@@ -27,7 +27,7 @@ export default function Project({ project }: ProjectProps) {
               </a>
 
               <div className="project-desc">
-                <p className="leading-6">{item.desc}</p>
+                <p className="leading-6 text-base">{item.desc}</p>
               </div>
 
               <ul className={`${mono.className} ul-tech-tag`}>

@@ -43,7 +43,7 @@ export default function OtherProject({ otherProject }: OtherProjectProps) {
               {item.title}
             </h3>
           </a>
-          <p>{item.desc}</p>
+          <p className="text-base">{item.desc}</p>
           <ul className={`${mono.className} ul-tech-tag`}>
             {item.tech.map((item, id) => (
               <li className="rounded-bg-cyan1" key={id}>

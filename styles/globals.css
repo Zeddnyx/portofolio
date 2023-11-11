@@ -144,7 +144,7 @@
   @apply fixed hidden md:grid items-center gap-2 fixed bottom-0 left-8 lg:left-14 xl:left-16;
 }
 .social-mobile {
-  @apply md:hidden py-5 flex gap-7 items-center justify-center text-center
+  @apply md:hidden py-5 flex gap-12 items-center justify-center text-center
 }
 .social-desktop-email {
   @apply fixed hidden md:flex items-center gap-2 tracking-[4px] fixed bottom-0 right-8 lg:right-14 lg:right-16;

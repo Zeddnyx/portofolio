@@ -1,12 +1,12 @@
 import { mont, pop, mono } from "@/utils/fonts";
-import { MotionDownOpacity } from "@/components/Motion";
+import { MotionUpOpacity } from "@/components/Motion"
 
 export default function HomePage() {
   const isWork = true;
   return (
-    <MotionDownOpacity
+    <MotionUpOpacity
       id="home"
-      className={`${mont.className} h-screen md:h-80 mt-80 md:mt-52 md:mb-40`}
+      className={`${mont.className} h-[60vh] md:h-80 mt-80 md:mt-52 md:mb-40`}
     >
       <div className="grid gap-2">
         <p className="text-cyan">Hi, i'am</p>
@@ -33,6 +33,6 @@ export default function HomePage() {
           </button>
         </a>
       )}
-    </MotionDownOpacity>
+    </MotionUpOpacity>
   );
 }

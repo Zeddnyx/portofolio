@@ -5,7 +5,7 @@ import Aos from "@/components/Aos";
 export default function About() {
   return (
     <Aos>
-      <section id="about">
+      <section id="about" className="xl:mx-20">
         <h2 className={mont.className}>
           <span className={`${mono.className} span-title`}>01. </span>
           About Me

@@ -17,13 +17,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav>
+    <nav className="container mx-auto">
       {/*Logo*/}
       <m.h3
         initial={{ x: -200 }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
-        className={`${mont.className} text-xl md:text-2xl cursor-pointer`}
+        className={`${mont.className} cursor-pointer`}
       >
         <a href="#home">
           <Image src={Zedd} alt="logo" height={30} width={30} />
